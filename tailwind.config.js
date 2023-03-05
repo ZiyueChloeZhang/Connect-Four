@@ -24,7 +24,7 @@ module.exports = {
       DEFAULT: "0 10px 0",
     },
     borderWidth: {
-      DEFAULT: '3px'
+      DEFAULT: "3px",
     },
     extend: {},
   },

@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-purple md:bg-purple-dark ${spaceGrotesk.className}`}>{children}</body>
+      <body className={`bg-purple ${spaceGrotesk.className}`}>{children}</body>
     </html>
   )
 }

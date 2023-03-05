@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Image from 'next/image'
 
-const MainMenu = () => {
+const MainMenu: FC<{ viewRules: () => void }> = ({ viewRules }) => {
     return (
         <div className='m-auto w-[480px] md:border md:shadow rounded-[40px] bg-purple'>
             <div className='flex flex-col items-center px-5 md:px-10 pt-[70px] pb-10 gap-5 text-md font-bold'>
@@ -22,7 +22,10 @@ const MainMenu = () => {
                         height={46}
                     />
                 </button>
-                <button className='border shadow rounded-[20px] w-full bg-white h-[72px] text-start px-4 hover:shadow-purple hover:border-purple'>
+                <button
+                    className='border shadow rounded-[20px] w-full bg-white h-[72px] text-start px-4 hover:shadow-purple hover:border-purple'
+                    onClick={viewRules}
+                >
                     GAME RULES
                 </button>
             </div>
