@@ -14,7 +14,7 @@ const PauseMenu: FC<{
         >
             <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
             <Dialog.Panel
-                className="absolute inset-0 z-10 border shadow rounded-[20px] m-auto mx-5 h-fit flex flex-col items-center pb-[30px] bg-purple"
+                className="absolute inset-0 z-10 border shadow rounded-[20px] m-auto mx-5 h-fit flex flex-col items-center pb-[30px] bg-purple md:max-w-[480px] md:m-auto"
             >
                 <Dialog.Title className='text-white text-lg font-bold py-[30px]'>PAUSE</Dialog.Title>
                 <div className='flex flex-col w-full px-5 gap-[30px]'>
